@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+
+* {
+    margin: 0px;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    overflow-x: hidden;
+}
+
+#NAV1 {
+    height: 80px;
+    flex-direction: row;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100vw - 50px);
+    padding-inline: 25px;
+    background-color: #BF0A30;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    border-bottom: solid 5px white;
+    position: relative;
+}
+
+#NAV1 h1 {
+    cursor: pointer;
+}
+
+#NAV1 h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+
+@media screen and (min-width: 930px) {
+#NAV1 ul {
+    list-style: none;
+    flex-direction: row;
+    display: inline-flex;
+    gap: 25px;
+    height: 100%;
+    align-items: center;
+}
+
+#NAV1 ul li {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#NAV1 ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white
+}
+
+#NAV1 ul li a:hover,
+#NAV1 h1:hover {
+    color: #002868;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* NavBar Extra! */
+@media screen and (max-width: 930px) {
+
+.OPEN {
+    list-style: none;
+    position: absolute;
+    bottom: -565px;
+    color: white;
+    background-color: #BF0A30;
+    width: calc(100%);
+    left: 0px;
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px;
+}
+
+.OPEN li{
+    text-align: center;
+    width: 80%;
+}
+
+.OPEN li a{
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+}
+}
+
+
+
+
+
+
+
+main iframe {
+    width: 100%;
+    height: 600px;
+    margin-top: 25px;
+}
+
+
+
+
+
+#HAM{
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 930px) {
+    .CLOSE {
+        display: none;
+    }
+
+   
+   #HAM{
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    gap: 8px;
+    align-items: end;
+    padding: 15px;
+    cursor: pointer;
+   }
+   #HAM div{
+    height: 5px;
+    background-color: white;
+   }
+   #HAM div:nth-child(1),#HAM div:nth-child(3){
+    width: 100%;
+   }
+   #HAM div:nth-child(2){
+    width: 70%;
+   }
+    }
+
+  .Sources{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    flex-direction: column;
+  }
